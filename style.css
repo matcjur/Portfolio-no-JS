@@ -4,6 +4,7 @@
     --color-background: #232323;
     --color-font:white;
     --color-shadow:rgb(74, 70, 70);
+    --color-lighter: #7a7676d8;
 }
 
 /* resets */
@@ -74,8 +75,13 @@ a{
     max-width: 2rem;
 }
 
-/* styles */
+.about-p{
+    margin-top: 1rem;
+}
 
+.link{
+    color: red;
+}
 
 #myname{
     font-size: 4rem;
@@ -84,6 +90,10 @@ a{
 #myjob{
     font-size: 3rem;
 }
+/* 
+.img-wrapper{
+    box-shadow: 5px 5px 5px yellow;
+} */
 
 /* layout */
 nav{
@@ -114,6 +124,16 @@ ul, .name-wrapper{
     margin: 0 auto 10rem auto;
     font-size: 2rem;
 }
+
+.grid{
+    margin-top: 1rem;
+    box-shadow: 5px 5px 5px white;
+    background-color: var(--color-lighter);
+    padding: 1rem;
+    border-radius: 10px;    
+}
+
+
 
 
 /* button */
@@ -166,5 +186,16 @@ ul, .name-wrapper{
         height: 7rem;
         width: 14rem;
         font-size: 2rem;
+    }
+
+    .project{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3rem auto;
+    }
+
+    .img-wrapper{
+        max-width: 40%;
+        margin: auto;
     }
 }
