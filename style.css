@@ -18,16 +18,20 @@ img{
     max-width: 100%
 }
 
+/* styles */
+
 ul li{
     text-decoration: none;
     list-style: none;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    font-weight:bold
+    font-weight:bold;
+    transition: 0.5s;
 }
 
 nav ul li:hover{
     box-shadow: 5px 5px 5px var(--color-shadow);
+    font-size: 1.2em;
 }
 
 body{
@@ -53,6 +57,9 @@ a{
     display: flex;
     flex-direction: column;
     background-color: var(--color-font);
+    box-shadow: 5px 5px 5px rgb(122, 122, 122);
+    border-radius: 10px;
+    margin-top: 3rem;
 }
 
 .about-line{
@@ -132,9 +139,32 @@ ul, .name-wrapper{
     align-items: center;
     border-radius: 20%;
     font-size: 1.5em;
+    transition: 0.5s;
 }
 
 .cta:hover{
     color: var(--color-background);
     background-color: var(--color-font);
+    height: 7rem;
+    width: 7rem;
+}
+
+@media screen and (min-width: 1024px){
+    .button-wrapper{
+        margin-left: 0;
+    }
+
+    .cta{
+        height: 6rem;
+        width: 12rem;
+        border-radius: 20%;
+    }
+
+    .cta:hover{
+        color: var(--color-background);
+        background-color: var(--color-font);
+        height: 7rem;
+        width: 14rem;
+        font-size: 2rem;
+    }
 }
