@@ -2,6 +2,8 @@
 
 :root{
     --color-background: #232323;
+    --color-font:white;
+    --color-shadow:rgb(74, 70, 70);
 }
 
 /* resets */
@@ -9,7 +11,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--color-font)
 }
 
 img{
@@ -19,6 +21,13 @@ img{
 ul li{
     text-decoration: none;
     list-style: none;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    font-weight:bold
+}
+
+nav ul li:hover{
+    box-shadow: 5px 5px 5px var(--color-shadow);
 }
 
 body{
@@ -32,8 +41,30 @@ a{
 .content{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     min-height: 100vh;
+}
+
+.main-page{
+    justify-content: space-between;
+}
+
+.about-list{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-font);
+}
+
+.about-line{
+    display: flex;
+}
+
+.about-line p{
+    color: black;
+}
+
+.icon{
+    max-width: 2rem;
 }
 
 /* styles */
@@ -63,7 +94,19 @@ ul, .name-wrapper{
     margin: auto;
 }
 
+.about{
+    margin: auto;
+}
 
+.section-title{
+    margin: 5rem auto 2rem auto;
+}
+
+.about{
+    box-shadow: 5px 5px 5px var(--color-shadow);
+    margin: 0 auto 10rem auto;
+    font-size: 2rem;
+}
 
 
 /* button */
@@ -83,10 +126,15 @@ ul, .name-wrapper{
     height: 6rem;
     width: 6rem;
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20%;
     font-size: 1.5em;
+}
+
+.cta:hover{
+    color: var(--color-background);
+    background-color: var(--color-font);
 }
