@@ -1,0 +1,92 @@
+/* variables */
+
+:root{
+    --color-background: #232323;
+}
+
+/* resets */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+img{
+    max-width: 100%
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* styles */
+
+
+#myname{
+    font-size: 4rem;
+}
+
+#myjob{
+    font-size: 3rem;
+}
+
+/* layout */
+nav{
+    padding-top: 2rem;
+}
+
+ul, .name-wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.content{
+    max-width: 70%;
+    margin: auto;
+}
+
+
+
+
+/* button */
+
+.button-area{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.button-wrapper{
+    margin: 0 auto 5rem auto;
+}
+
+.cta{
+    border: solid 3px white;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    font-size: 1.5em;
+}
