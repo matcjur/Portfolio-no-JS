@@ -5,6 +5,8 @@
     --color-font:white;
     --color-shadow:rgb(74, 70, 70);
     --color-lighter: #7a7676d8;
+    --font-family: "Inter", sans-serif;
+
 }
 
 /* resets */
@@ -12,7 +14,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: var(--color-font)
+    color: var(--color-font);
+    font-family: var(--font-family);
 }
 
 img{
@@ -46,6 +49,8 @@ a{
 .content{
     display: flex;
     flex-direction: column;
+    max-width: 90%;
+    margin: auto;
 
     min-height: 100vh;
 }
@@ -57,8 +62,8 @@ a{
 .about-list{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-font);
-    box-shadow: 5px 5px 5px rgb(122, 122, 122);
+    /* background-color: var(--color-font); */
+    box-shadow: 16px 19px 41px 2px rgba(112,111,112,0.33);
     border-radius: 10px;
     margin-top: 3rem;
 }
@@ -67,9 +72,9 @@ a{
     display: flex;
 }
 
-.about-line p{
+/* .about-line p{
     color: black;
-}
+} */
 
 .icon{
     max-width: 2rem;
@@ -90,12 +95,11 @@ a{
 #myjob{
     font-size: 3rem;
 }
-/* 
-.img-wrapper{
-    box-shadow: 5px 5px 5px yellow;
-} */
 
-/* layout */
+.description p{
+    font-size: 1.5rem;
+}
+
 nav{
     padding-top: 2rem;
 }
@@ -104,11 +108,6 @@ ul, .name-wrapper{
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
-}
-
-.content{
-    max-width: 70%;
-    margin: auto;
 }
 
 .about{
@@ -127,8 +126,9 @@ ul, .name-wrapper{
 
 .grid{
     margin-top: 1rem;
-    box-shadow: 5px 5px 5px white;
-    background-color: var(--color-lighter);
+    /* box-shadow: 5px 5px 5px white; */
+    /* background-color: var(--color-lighter); */
+    /* box-shadow: 0px 0px 35px 36px rgba(112,111,112,0.68); */
     padding: 1rem;
     border-radius: 10px;    
 }
@@ -170,6 +170,10 @@ ul, .name-wrapper{
 }
 
 @media screen and (min-width: 1024px){
+
+    .content{
+        max-width: 70%;
+    }
     .button-wrapper{
         margin-left: 0;
     }
@@ -192,10 +196,20 @@ ul, .name-wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 3rem auto;
+        
+        border-radius: 20px;
+        padding: 10px;
     }
 
     .img-wrapper{
-        max-width: 40%;
+        max-width: 90%;
         margin: auto;
+        box-shadow: 16px 19px 41px 2px rgba(112,111,112,0.33);
+        transition: 0.5s;
+    }
+
+    .img-wrapper:hover{
+        max-width: 100%;
+        box-shadow: 16px 19px 41px 13px rgba(112,111,112,0.5);
     }
 }
